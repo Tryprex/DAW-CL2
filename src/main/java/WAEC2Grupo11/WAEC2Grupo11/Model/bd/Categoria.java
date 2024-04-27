@@ -6,7 +6,7 @@ import lombok.Data;
 import java.util.Date;
 @Data
 @Entity
-@Table(name = "Categoria")
+@Table(name = "categoria")
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,5 +21,4 @@ public class Categoria {
     @ManyToOne
     @JoinColumn(name = "idfarmaco")
     private Farmaco farmaco;
-
 }
