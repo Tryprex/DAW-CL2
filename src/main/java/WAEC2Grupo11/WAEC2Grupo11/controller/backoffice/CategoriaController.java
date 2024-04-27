@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @AllArgsConstructor
 @Controller
-@RequestMapping("/Categorias")
+@RequestMapping("")
 public class CategoriaController {
 
     private IcategoriaService icategoriaService;
-    @GetMapping("/list")
+    @GetMapping("/")
     public  String listarCategoria(Model model){
         model.addAttribute("categorias",
                 icategoriaService.listarCategorias());
