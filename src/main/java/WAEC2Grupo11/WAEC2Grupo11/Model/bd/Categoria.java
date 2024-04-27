@@ -6,19 +6,19 @@ import lombok.Data;
 import java.util.Date;
 @Data
 @Entity
-@Table(name = "Categoria")
+@Table(name = "categoria")
 public class Categoria {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idcategoria")
     private Integer IdCategoria;
-    @Column(name = "NomCategoria")
+    @Column(name = "nomcategoria")
     private String NomCategoria;
-    @Column(name = "DescripCategoria")
+    @Column(name = "descripcategoria")
     private String descripCategoria;
-    @Column(name = "FechaRegistro")
+    @Column(name = "fecharegistro")
     private Date FechaRegistro;
     @ManyToOne
-    @JoinColumn(name = "IdFarmaco")
+    @JoinColumn(name = "idfarmaco")
     private Farmaco farmaco;
-
 }
