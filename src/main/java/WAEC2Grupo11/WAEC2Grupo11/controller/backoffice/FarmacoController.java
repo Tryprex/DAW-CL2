@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @AllArgsConstructor
 @Controller
-@RequestMapping("")
+@RequestMapping("Farmaco")
 public class FarmacoController {
     private IFarmacoService iFarmacoService;
-    @GetMapping("/")
+    @GetMapping("/list")
 public String listarFarmaco(Model model){
     model.addAttribute("farmacos",
             iFarmacoService.listarFarmaco());
