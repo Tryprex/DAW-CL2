@@ -11,11 +11,12 @@ import java.util.Date;
 public class Farmaco {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "idfarmaco")
   private Integer IdFarmaco;
-  @Column(name = "NomFarmaco")
+  @Column(name = "nomfarmaco")
   private String NomFarmaco;
-  @Column(name = "Composicion")
+  @Column(name = "composicion")
   private String Composicion;
-  @Column(name = "FechaVencimiento")
+  @Column(name = "fechavencimiento")
   private Date FechaVencimiento;
 }
