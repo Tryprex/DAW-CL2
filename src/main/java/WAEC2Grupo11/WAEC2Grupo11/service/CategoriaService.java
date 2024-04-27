@@ -16,4 +16,8 @@ public class CategoriaService implements IcategoriaService{
     public List<Categoria> listarCategorias() {
         return categoriaRepository.findAll();
     }
+    @Override
+    public void registerCategoria(Categoria categor) {
+        categoriaRepository.save(categor);
+    }
 }

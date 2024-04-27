@@ -6,4 +6,5 @@ import java.util.List;
 
 public interface IcategoriaService {
     List<Categoria> listarCategorias();
+    void registerCategoria(Categoria categor);
 }
